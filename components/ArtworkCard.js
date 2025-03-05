@@ -14,7 +14,7 @@ export default function ArtworkCard({objectID}){
   if(data){
     return (<>
       <Card>
-          <Card.Img variant="top" src={data.primaryImageSmall ? data.primaryImageSmall : 'https://via.placeholder.com/375x375.png?text=[+Not+Available+]' } />
+        <Card.Img variant="top" src={data.primaryImageSmall ? data.primaryImageSmall : 'https://placehold.co/375x375?text=Not+Available' } />
           <Card.Body>
             <Card.Title>{data?.title || "N/A"}</Card.Title>
             <Card.Text>
